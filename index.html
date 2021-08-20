@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Purchase Project</title>
+    <!-- tailwind link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+                
+    </header>
+    <main>
+        <section >
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="mx-10 my-16">
+                    <img class="" height="500" src="images/mac.png" alt="">
+                </div>
+
+
+
+                <div class="mx-10 my-16">
+
+<h1 class="text-5xl font-bold leading-normal">Customize Your Blue 24-inch iMac With Apple M1 Chip</h1>
+<p class="text-2xl">
+    With industry-leading performance, powerful features, and incredible efficiency, M1 is Apple’s first chip designed specifically for the Mac.
+</p>
+<!-- Memory Update part -->
+
+<h2 class="text-3xl mt-6 font-bold">Memory</h2>
+<button id="memory-8Gb" class="btn border-2 border-gray-400 mx-2 p-4 text-xl mt-4 rounded">8GB Unified Memory</button>
+<button id="memory-16Gb" class="btn border-2 border-gray-400 p-4 text-xl mt-4 rounded">16GB Unified Memory</button>
+
+<!-- Storage Update part -->
+<h2 class="text-3xl mt-6 font-bold">Storage</h2>
+<button id="ssd-256gb" class="btn border-2 border-gray-400 mx-4 p-4 text-xl mt-4 rounded">256GB SSD Storage</button>
+<button id="ssd-512gb" class="btn border-2 border-gray-400 p-4 text-xl mt-4 rounded">512GB SSD Storage</button>
+<button id="ssd-1tb" class="btn border-2 border-gray-400 mx-2 p-4 text-xl mt-4 rounded">1TB SSD Storage</button>
+
+
+<!-- Delevary part -->
+<h2 class="text-3xl mt-6 font-bold">Choose Your Delivery Option</h2>
+<button id="free-delivery" class="btn border-2 border-gray-400 mx-2 p-4 text-xl mt-4 rounded">Friday,Aug 25 FREE Prime Delivery</button>
+<button id="charges-delivery" class="btn border-2 border-gray-400 p-4 text-xl mt-4 rounded">Friday,Aug 21 Delivery Charge $20</button>
+
+
+<!-- total price part calculation  -->
+<table style="width:100%" class="mt-16 text-4xl font-bold">
+    
+    <tr>
+      <td>Best Price</td>
+      
+      <td>$<span id="best-price">1299</span> </td>
+    </tr>
+    
+    <tr>
+      <td>Extra Memory Cost</td>
+      
+      <td>$ <span id="memory-cost">0</span></td>
+    </tr>
+    <tr>
+      <td>Extra Storage Cost</td>
+      
+      <td>$<span id="storage-cost">0</span></td>
+    </tr>
+    <br>
+      <tr >
+      <td>Delivery Charge</td>
+      
+      <td>$<span id="delivery-cost">0</span></td>
+      </tr>
+   
+    
+  </table>
+  <br>
+  <hr class="h-1 bg-gray-900 ">
+  <div class="text-4xl font-bold text-center mt-2"> 
+    <h1 class="inline ">Total Price</h1>
+    <h1 class="inline ml-96">$<span id="total-price">1299</span></h1>
+
+</div>
+  
+<h1 class="text-4xl font-bold mt-16 mb-8">Add Pomo Code</h1>
+<input id="submit-input" class="border w-3/6 h-20" type="text" name="" id="">
+<button class="btn text-5xl px-16 py-6" id="submit-btn">Apply</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+ <script src="js/macbook.js"></script>
+</body>
+</html>
