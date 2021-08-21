@@ -42,7 +42,7 @@ memory8GbPrice.addEventListener('click',function() {
     totalCost()
 })
 memory16GbPrice.addEventListener('click',function() {
-    // convert("memory",30);
+    // convert("memory",20);
     memoryCost.innerText=180;
     totalCost()
 })
