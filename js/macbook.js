@@ -16,9 +16,8 @@ let deliveryCost=document.getElementById('delivery-cost');
 const totalPrice=document.getElementById('total-price');
 const submitInput=document.getElementById('submit-input');
 const promocode="stevekaku";
-
 // total cost caclution funcation
-    function totalCost() {
+function totalCost() {
     const totalCostNumber=(parseInt(bestPrice.innerText)+parseInt(memoryCost.innerText)+parseInt(storageCost.innerText)+parseInt(deliveryCost.innerText));
     totalPrice.innerText=totalCostNumber;
     const totalPrice2=document.getElementById('total-price2');
@@ -70,8 +69,8 @@ freeDelivery.addEventListener('click',function() {
     totalCost()
 })
 chargesDelivery.addEventListener('click',function() {
-    // convert("delivery",30);
-    deliveryCost.innerText=30;
+    // convert("delivery",20);
+    deliveryCost.innerText=20;
     totalCost()  
 })
 // // bonus marks works event handle 
