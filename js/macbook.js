@@ -9,7 +9,6 @@ const chargesDelivery=document.getElementById('charges-delivery');
 const bestPrice=document.getElementById('best-price');
 // memory extra cost update section 
 let memoryCost=document.getElementById('memory-cost');
-
 // storage extra cost update section 
 let storageCost=document.getElementById('storage-cost');
 // delivery extra cost udpade section 
@@ -19,12 +18,10 @@ const submitInput=document.getElementById('submit-input');
 const promocode="stevekaku";
 
 // total cost caclution funcation
-function totalCost() {
+    function totalCost() {
     const totalCostNumber=(parseInt(bestPrice.innerText)+parseInt(memoryCost.innerText)+parseInt(storageCost.innerText)+parseInt(deliveryCost.innerText));
     totalPrice.innerText=totalCostNumber;
-
     const totalPrice2=document.getElementById('total-price2');
-    
      // bonus marks works function 
    if (submitInput.value==promocode) {
     const total=totalCostNumber*20/100;
@@ -34,32 +31,26 @@ function totalCost() {
    }
    submitInput.value="";
 }
-
 // function convert(name,price) {
 //     const product=document.getElementById(name+"-cost");
 //     const convertPrice=parseInt(price)
 //     product.innerText=convertPrice;
 // }
-
 // memory update event part 
-
 memory8GbPrice.addEventListener('click',function() {
     // convert("memory",0);
     memoryCost.innerText=0;
     totalCost()
 })
-
 memory16GbPrice.addEventListener('click',function() {
     // convert("memory",30);
     memoryCost.innerText=180;
     totalCost()
 })
-
 // SSD Update event part 
 ssd256gbPrice.addEventListener('click',function() {
     // convert("storage",0);
     storageCost.innerText=0;
-  
     totalCost()
 })
 ssd512gbPrice.addEventListener('click',function() {
@@ -72,21 +63,17 @@ ssd1TbPrice.addEventListener('click',function() {
     storageCost.innerText=180;
     totalCost()
 })
-
 // delivery cost update event part 
 freeDelivery.addEventListener('click',function() {
     // convert("delivery",0);
     deliveryCost.innerText=0;
     totalCost()
 })
-
 chargesDelivery.addEventListener('click',function() {
     // convert("delivery",30);
     deliveryCost.innerText=30;
-    totalCost()
-   
+    totalCost()  
 })
-
 // // bonus marks works event handle 
 document.getElementById('submit-btn').addEventListener('click',function () {
    totalCost();
